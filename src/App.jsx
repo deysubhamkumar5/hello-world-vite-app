@@ -5,437 +5,186 @@ function App() {
   return (
     <div className="app">
 
-      {/* Animated Background */}
-      <div className="background">
-        <div className="orb orb-one"></div>
-        <div className="orb orb-two"></div>
-        <div className="orb orb-three"></div>
-      </div>
-
-      {/* Navigation */}
       <nav className="navbar">
-
-        <div className="logo">
-          <span>SKD</span>
-        </div>
+        <h2>SKD</h2>
 
         <div className="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-
-        <a href="#contact" className="nav-button">
-          Contact
-        </a>
-
       </nav>
 
-      {/* Hero Section */}
-      <main id="home" className="hero">
-
-        <div className="hero-content">
-
-          <div className="welcome-badge">
-            <span className="pulse"></span>
-            Welcome to my digital space
-          </div>
-
-          <p className="small-title">
-            HELLO, I'M
-          </p>
+      <section id="home" className="hero">
+        <div className="hero-text">
+          <p>HELLO, I'M</p>
 
           <h1>
-            SUBHAM
-            <span>KUMAR DEY</span>
+            Subham Kumar Dey
           </h1>
 
-          <div className="typing-box">
-            <span className="typing">
-              B.Tech CSE Student
-            </span>
-          </div>
+          <h2>B.Tech CSE Student</h2>
 
-          <p className="description">
-            I'm a Computer Science Engineering student at
-            <strong> KL University</strong>, exploring AI, Machine
-            Learning, programming and modern technology.
+          <p>
+            I am a Computer Science Engineering student at
+            K L Deemed to be University. I am interested in
+            programming, web development and Artificial Intelligence.
           </p>
 
-          <div className="hero-buttons">
-
-            <a href="#about" className="primary-button">
-              Explore My Journey →
-            </a>
-
-            <a href="#projects" className="secondary-button">
+          <div className="buttons">
+            <a href="#projects" className="btn primary">
               View Projects
             </a>
 
+            <a href="#contact" className="btn secondary">
+              Contact Me
+            </a>
           </div>
-
         </div>
 
-        {/* Student Profile Card */}
-        <div className="student-card">
-
-          <div className="card-glow"></div>
-
-          <div className="card-top">
-            <span>STUDENT PROFILE</span>
-            <span className="live">● LIVE</span>
+        <div className="profile">
+          <div className="profile-image">
+            SKD
           </div>
 
-          <div className="avatar">
-            <span>SKD</span>
-          </div>
-
-          <h2>
-            Subham Kumar Dey
-          </h2>
-
-          <p className="role">
-            B.Tech • Computer Science & Engineering
-          </p>
-
-          <div className="university">
-
-            <div className="university-icon">
-              🎓
-            </div>
-
-            <div>
-              <small>
-                UNIVERSITY
-              </small>
-
-              <strong>
-                K L Deemed to be University
-              </strong>
-            </div>
-
-          </div>
-
-          <div className="card-stats">
-
-            <div>
-              <strong>AI</strong>
-              <span>Learning</span>
-            </div>
-
-            <div>
-              <strong>CSE</strong>
-              <span>Student</span>
-            </div>
-
-            <div>
-              <strong>🚀</strong>
-              <span>Building</span>
-            </div>
-
-          </div>
-
+          <h2>Subham Kumar Dey</h2>
+          <p>B.Tech Computer Science and Engineering</p>
+          <p>K L Deemed to be University</p>
         </div>
+      </section>
 
-      </main>
-
-      {/* About Section */}
       <section id="about" className="section">
+        <p className="title">01 - ABOUT ME</p>
 
-        <div className="section-label">
-          01 — ABOUT ME
-        </div>
+        <h2>About Me</h2>
 
-        <h2>
-          Learning today.
-          <span>Building tomorrow.</span>
-        </h2>
-
-        <p className="section-text">
-          My journey in Computer Science is about learning technologies,
-          creating projects and continuously improving my skills.
-          I'm especially interested in Artificial Intelligence and
-          Machine Learning.
+        <p className="text">
+          I am a Computer Science student who enjoys learning
+          programming and building projects. I am currently
+          improving my skills in Java, Python, React and AI.
         </p>
 
-        <div className="info-grid">
+        <div className="cards">
 
-          <div className="info-card">
-            <span>🎓</span>
-
-            <h3>
-              Education
-            </h3>
-
-            <p>
-              B.Tech in Computer Science & Engineering
-            </p>
+          <div className="card">
+            <h3>Education</h3>
+            <p>B.Tech in Computer Science and Engineering</p>
           </div>
 
-          <div className="info-card">
-            <span>🏫</span>
-
-            <h3>
-              University
-            </h3>
-
-            <p>
-              K L Deemed to be University
-            </p>
+          <div className="card">
+            <h3>University</h3>
+            <p>K L Deemed to be University</p>
           </div>
 
-          <div className="info-card">
-            <span>🤖</span>
-
-            <h3>
-              Interest
-            </h3>
-
-            <p>
-              AI • ML • Software Development
-            </p>
+          <div className="card">
+            <h3>Interest</h3>
+            <p>AI, Machine Learning and Software Development</p>
           </div>
 
         </div>
-
       </section>
 
-      {/* Skills Section */}
-      <section id="skills" className="section skills-section">
+      <section id="skills" className="section">
+        <p className="title">02 - SKILLS</p>
 
-        <div className="section-label">
-          02 — SKILLS
-        </div>
+        <h2>My Skills</h2>
 
-        <h2>
-          Technologies I'm
-          <span>exploring.</span>
-        </h2>
+        <div className="skills">
 
-        <div className="skills-grid">
-
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              ☕
-            </div>
-
-            <h3>
-              Java
-            </h3>
-
-            <p>
-              Programming & OOP
-            </p>
-
-            <div className="progress">
-              <div className="progress-bar bar-80"></div>
-            </div>
-
+          <div className="skill">
+            <h3>Java</h3>
+            <p>Object Oriented Programming</p>
           </div>
 
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              🐍
-            </div>
-
-            <h3>
-              Python
-            </h3>
-
-            <p>
-              Programming & Data
-            </p>
-
-            <div className="progress">
-              <div className="progress-bar bar-75"></div>
-            </div>
-
+          <div className="skill">
+            <h3>Python</h3>
+            <p>Programming and Data</p>
           </div>
 
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              ⚛
-            </div>
-
-            <h3>
-              React
-            </h3>
-
-            <p>
-              Frontend Development
-            </p>
-
-            <div className="progress">
-              <div className="progress-bar bar-70"></div>
-            </div>
-
+          <div className="skill">
+            <h3>React</h3>
+            <p>Frontend Development</p>
           </div>
 
-          <div className="skill-card">
-
-            <div className="skill-icon">
-              🧠
-            </div>
-
-            <h3>
-              AI / ML
-            </h3>
-
-            <p>
-              Currently Learning
-            </p>
-
-            <div className="progress">
-              <div className="progress-bar bar-60"></div>
-            </div>
-
+          <div className="skill">
+            <h3>C</h3>
+            <p>Programming Fundamentals</p>
           </div>
 
         </div>
-
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="section">
+        <p className="title">03 - PROJECTS</p>
 
-        <div className="section-label">
-          03 — PROJECTS
-        </div>
+        <h2>My Projects</h2>
 
-        <h2>
-          Things I'm
-          <span>building.</span>
-        </h2>
+        <div className="projects">
 
-        <div className="projects-grid">
-
-          <div className="project-card">
-
-            <div className="project-number">
-              01
-            </div>
-
-            <div className="project-icon">
-              🌾
-            </div>
-
-            <h3>
-              Farm X
-            </h3>
+          <div className="project">
+            <h3>Farm X</h3>
 
             <p>
-              A farmer-focused digital platform designed to connect
-              farmers with useful services and marketplace features.
+              A digital platform designed to provide useful
+              services and marketplace features for farmers.
             </p>
 
-            <div className="tags">
-              <span>React</span>
-              <span>Web</span>
-              <span>AI</span>
-            </div>
-
+            <span>React</span>
+            <span>AI</span>
+            <span>Web</span>
           </div>
 
-          <div className="project-card">
-
-            <div className="project-number">
-              02
-            </div>
-
-            <div className="project-icon">
-              🤖
-            </div>
-
-            <h3>
-              AI Projects
-            </h3>
+          <div className="project">
+            <h3>AI and ML Projects</h3>
 
             <p>
-              Exploring machine learning concepts, prediction models
-              and intelligent applications.
+              Projects based on machine learning, data analysis
+              and prediction models.
             </p>
 
-            <div className="tags">
-              <span>Python</span>
-              <span>ML</span>
-              <span>Data</span>
-            </div>
-
+            <span>Python</span>
+            <span>ML</span>
+            <span>Data</span>
           </div>
 
-          <div className="project-card">
-
-            <div className="project-number">
-              03
-            </div>
-
-            <div className="project-icon">
-              💻
-            </div>
-
-            <h3>
-              College Projects
-            </h3>
+          <div className="project">
+            <h3>College Projects</h3>
 
             <p>
-              Academic and personal projects created while developing
-              my Computer Science skills.
+              Academic projects created while learning
+              programming and Computer Science.
             </p>
 
-            <div className="tags">
-              <span>Java</span>
-              <span>C</span>
-              <span>Python</span>
-            </div>
-
+            <span>Java</span>
+            <span>C</span>
+            <span>Python</span>
           </div>
 
         </div>
-
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="contact-section">
+      <section id="contact" className="contact">
+        <p className="title">04 - CONTACT</p>
 
-        <div className="contact-glow"></div>
-
-        <div className="section-label">
-          04 — CONTACT
-        </div>
-
-        <h2>
-          Let's build something
-          <span>interesting.</span>
-        </h2>
+        <h2>Let's Connect</h2>
 
         <p>
-          Thanks for visiting my digital space.
+          Feel free to contact me for projects and collaboration.
         </p>
 
         <a
           href="mailto:your-email@example.com"
-          className="contact-button"
+          className="btn primary"
         >
-          Say Hello 👋
+          Contact Me
         </a>
-
       </section>
 
-      {/* Footer */}
       <footer>
-
-        <div>
-          © 2026 Subham Kumar Dey
-        </div>
-
-        <div>
-          Built with React + Vite ⚡
-        </div>
-
+        <p> Subham Kumar Dey</p>
+        <p>React and Vite</p>
       </footer>
 
     </div>
